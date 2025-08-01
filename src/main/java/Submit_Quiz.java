@@ -126,9 +126,9 @@ public class Submit_Quiz extends HttpServlet {
         }
 
         // Email setup
-        final String fromEmail = "areenwish.mum@gmail.com";
-        final String password = "hvbyljvrvlpwmtvw";
-//        final String toEmail = "areenwish.mum@gmail.com";
+        final String fromEmail = " ";
+        final String password = " ";
+
         final String toEmail = studentEmail;
 
         Properties props = new Properties();
