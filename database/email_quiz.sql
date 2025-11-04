@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2025 at 03:10 PM
+-- Generation Time: Nov 04, 2025 at 12:10 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -70,14 +70,6 @@ CREATE TABLE `student_detail` (
   `name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `student_detail`
---
-
-INSERT INTO `student_detail` (`id`, `email`, `name`) VALUES
-(1, 'areenwish.mum@gmail.com', 'Areen Vishwakarma '),
-(2, 'areenwish.mum@gmail.com', 'Areen Vishwakarma ');
-
 -- --------------------------------------------------------
 
 --
@@ -89,32 +81,6 @@ CREATE TABLE `users_ans` (
   `selected_ans` varchar(255) NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `users_ans`
---
-
-INSERT INTO `users_ans` (`question`, `selected_ans`, `id`) VALUES
-('What is the capital of France?', 'London', 1),
-('Which planet is known as the Red Planet?', 'Mars', 2),
-('Who wrote \"Romeo and Juliet\"?', 'William Shakespeare', 3),
-('What is the largest mammal in the world?', 'Blue Whale', 4),
-('Which element has the chemical symbol O?', 'Oxygen', 5),
-('What is the square root of 64?', '8', 6),
-('In which year did India gain independence?', '1947', 7),
-('What is H2O commonly known as?', 'Water', 8),
-('Which continent is the Sahara Desert located in?', 'Africa', 9),
-('Who painted the Mona Lisa?', 'Leonardo da Vinci', 10),
-('What is the capital of France?', 'Madrid', 11),
-('Which planet is known as the Red Planet?', 'Earth', 12),
-('Who wrote \"Romeo and Juliet\"?', 'Mark Twain', 13),
-('What is the largest mammal in the world?', 'Blue Whale', 14),
-('Which element has the chemical symbol O?', 'Osmium', 15),
-('What is the square root of 64?', '8', 16),
-('In which year did India gain independence?', '1947', 17),
-('What is H2O commonly known as?', 'Salt', 18),
-('Which continent is the Sahara Desert located in?', 'Australia', 19),
-('Who painted the Mona Lisa?', 'Pablo Picasso', 20);
 
 --
 -- Indexes for dumped tables
@@ -152,13 +118,13 @@ ALTER TABLE `quiz_questions`
 -- AUTO_INCREMENT for table `student_detail`
 --
 ALTER TABLE `student_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users_ans`
 --
 ALTER TABLE `users_ans`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
